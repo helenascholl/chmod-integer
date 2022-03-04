@@ -3,7 +3,6 @@
   src: url('../assets/Roboto_Mono/RobotoMono-Regular.ttf');
 }
 
-h1 {
+* {
   font-family: 'RobotoMono', monospace;
-  font-size: 2em;
 }
