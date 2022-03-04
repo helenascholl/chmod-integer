@@ -6,3 +6,9 @@
 * {
   font-family: 'RobotoMono', monospace;
 }
+
+.permissions {
+  width: 30em;
+  display: flex;
+  justify-content: space-between;
+}
