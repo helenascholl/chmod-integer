@@ -12,3 +12,14 @@
   display: flex;
   justify-content: space-between;
 }
+
+input[type=text] {
+  width: 3em;
+  font-size: 3em;
+  text-align: center;
+  padding: 0.5em;
+}
+
+input[type=text]:focus {
+  outline: none;
+}
