@@ -7,6 +7,18 @@
   font-family: 'RobotoMono', monospace;
 }
 
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 30vh 0;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .permissions {
   width: 30em;
   display: flex;
