@@ -62,3 +62,39 @@ function setPermissions(digit, { read, write, execute }) {
     execute.checked = true;
   }
 }
+
+function calculateInteger() {
+  let integerValue = 1000;
+
+  if (userRead.checked) {
+    integerValue += 400;
+  }
+  if (userWrite.checked) {
+    integerValue += 200;
+  }
+  if (userExecute.checked) {
+    integerValue += 100;
+  }
+
+  if (groupRead.checked) {
+    integerValue += 40;
+  }
+  if (groupWrite.checked) {
+    integerValue += 20;
+  }
+  if (groupExecute.checked) {
+    integerValue += 10;
+  }
+
+  if (otherRead.checked) {
+    integerValue += 4;
+  }
+  if (otherWrite.checked) {
+    integerValue += 2;
+  }
+  if (otherExecute.checked) {
+    integerValue += 1;
+  }
+
+  integer.value = integerValue.toString().substring(1);
+}
