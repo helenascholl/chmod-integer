@@ -27,6 +27,16 @@ window.addEventListener('DOMContentLoaded', _ => {
       calculatePermissions();
     }
   });
+
+  userRead.addEventListener('change', calculateInteger);
+  userWrite.addEventListener('change', calculateInteger);
+  userExecute.addEventListener('change', calculateInteger);
+  groupRead.addEventListener('change', calculateInteger);
+  groupWrite.addEventListener('change', calculateInteger);
+  groupExecute.addEventListener('change', calculateInteger);
+  otherRead.addEventListener('change', calculateInteger);
+  otherWrite.addEventListener('change', calculateInteger);
+  otherExecute.addEventListener('change', calculateInteger);
 });
 
 function resetPermissions() {
