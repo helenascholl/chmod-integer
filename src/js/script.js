@@ -23,8 +23,11 @@ window.addEventListener('DOMContentLoaded', _ => {
 
   integer.addEventListener('input', _ => {
     if (integer.value.match(/^[0-7]{3}$/)) {
+      integer.classList.remove('error');
       resetPermissions();
       calculatePermissions();
+    } else {
+      integer.classList.add('error');
     }
   });
 
