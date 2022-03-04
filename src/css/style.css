@@ -1,3 +1,7 @@
+:root {
+  --background: #cecece;
+}
+
 @font-face {
   font-family: 'RobotoMono';
   src: url('../assets/Roboto_Mono/RobotoMono-Regular.ttf');
@@ -17,6 +21,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  background-color: var(--background);
 }
 
 body > div {
@@ -25,11 +30,16 @@ body > div {
   justify-content: space-between;
 }
 
+input {
+  background-color: var(--background);
+}
+
 input[type=text] {
   width: 3em;
   font-size: 3em;
   text-align: center;
   padding: 0.5em;
+  border: 0.1em solid black;
 }
 
 input[type=text]:focus {
