@@ -22,8 +22,6 @@ window.addEventListener('DOMContentLoaded', _ => {
   otherExecute = document.getElementById('other-execute');
 
   integer.addEventListener('input', _ => {
-    console.log(integer.value);
-    console.log(integer.value.match(/^[0-7]{3}/));
     if (integer.value.match(/^[0-7]{3}/)) {
       resetPermissions();
       calculatePermissions();
